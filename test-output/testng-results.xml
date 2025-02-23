@@ -1,20 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-02-23T15:23:29 ICT" name="Default suite" finished-at="2025-02-23T15:23:36 ICT" duration-ms="7666">
+  <suite started-at="2025-02-23T16:23:22 ICT" name="Default suite" finished-at="2025-02-23T16:23:30 ICT" duration-ms="8508">
     <groups>
     </groups>
-    <test started-at="2025-02-23T15:23:29 ICT" name="Default test" finished-at="2025-02-23T15:23:36 ICT" duration-ms="7666">
+    <test started-at="2025-02-23T16:23:22 ICT" name="Default test" finished-at="2025-02-23T16:23:30 ICT" duration-ms="8508">
       <class name="NguyenTuanTai.add_user_feature">
-        <test-method is-config="true" signature="lauchBrowser()[pri:0, instance:NguyenTuanTai.add_user_feature@5df417a7]" started-at="2025-02-23T15:23:29 ICT" name="lauchBrowser" finished-at="2025-02-23T15:23:36 ICT" duration-ms="7378" status="PASS">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:NguyenTuanTai.add_user_feature@403132fc]" started-at="2025-02-23T16:23:22 ICT" name="launchBrowser" finished-at="2025-02-23T16:23:27 ICT" duration-ms="5116" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- lauchBrowser -->
-        <test-method signature="login()[pri:0, instance:NguyenTuanTai.add_user_feature@5df417a7]" started-at="2025-02-23T15:23:36 ICT" name="login" finished-at="2025-02-23T15:23:36 ICT" duration-ms="217" status="PASS">
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="login()[pri:0, instance:NguyenTuanTai.add_user_feature@403132fc]" started-at="2025-02-23T16:23:27 ICT" name="login" finished-at="2025-02-23T16:23:29 ICT" duration-ms="1777" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
+        <test-method signature="addUser()[pri:0, instance:NguyenTuanTai.add_user_feature@403132fc]" started-at="2025-02-23T16:23:29 ICT" name="addUser" finished-at="2025-02-23T16:23:30 ICT" depends-on-methods="NguyenTuanTai.add_user_feature.login" duration-ms="1468" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addUser -->
       </class> <!-- NguyenTuanTai.add_user_feature -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

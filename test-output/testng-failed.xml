@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="NguyenTuanTai.html_features">
+      <class name="NguyenTuanTai.add_user_feature">
         <methods>
-          <include name="lauchBrowser"/>
-          <include name="KiemThuSoSanhTieuDe"/>
+          <include name="launchBrowser"/>
+          <include name="addUser"/>
+          <include name="login"/>
         </methods>
-      </class> <!-- NguyenTuanTai.html_features -->
+      </class> <!-- NguyenTuanTai.add_user_feature -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
