@@ -2,16 +2,17 @@ package NguyenTuanTai;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.Assert;
-import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.By;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class html_features {
+public class add_user_feature {
 	public String url = "https://zlight.stlsolution.com/";
 	public WebDriver driver;
+
 	
 	@BeforeTest 
 	public void lauchBrowser() throws InterruptedException {
@@ -24,12 +25,9 @@ public class html_features {
 	}
 	
 	@Test 
-	public void KiemThuSoSanhTieuDe() {
-		String expectedTitle = "PLT SOLUTION (Panda laptop)";
-		String actualTitle = driver.getTitle();
-		Assert.assertEquals(actualTitle, expectedTitle);
-		if(actualTitle.toString().equalsIgnoreCase(expectedTitle.toString())) {
-			System.out.println("Hai tieu de mong doi va thuc te giong nhau");
-		}
+	public void login() throws InterruptedException {
+		WebElement inputElement = driver.findElement(By.xpath("/html/body/div/div/div/div/div[2]/form/div[2]/div/div/div/div/span/input"));
+		 inputElement.sendKeys("haha"); 
 	}
+	
 }
